@@ -1,0 +1,36 @@
+name = "github pages"
+
+[on]
+  [on.push]
+  branches = [ "master" ]
+
+[jobs.deploy]
+runs-on = "ubuntu-20.04"
+
+  [[jobs.deploy.steps]]
+  uses = "actions/checkout@v2"
+
+    [jobs.deploy.steps.with]
+    submodules = true
+    fetch-depth = 0
+
+  [[jobs.deploy.steps]]
+  name = "Setup Hugo"
+  uses = "peaceiris/actions-hugo@v2"
+
+    [jobs.deploy.steps.with]
+    hugo-version = "latest"
+
+  [[jobs.deploy.steps]]
+  name = "Build"
+  run = "hugo --minify"
+
+  [[jobs.deploy.steps]]
+  name = "Deploy"
+  uses = "peaceiris/actions-gh-pages@v3"
+  if = "github.ref == 'refs/heads/main'"
+
+    [jobs.deploy.steps.with]
+    github_token = "${{ secrets.GITHUB_TOKEN }}"
+    publish_dir = "./public"
+
