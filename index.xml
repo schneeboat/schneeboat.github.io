@@ -12,7 +12,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://schneeboat.github.io/stories/001/</guid>
-      <description>📌 Click Here</description>
+      <description>📌 Click Here
+Have you encountered a long article that you just don/&amp;rsquo;t have the time to read? Here is a trick to help you grasp of the main idea. Just by copy-pasting the text, you will see the following:
+ Summary: The most crucial sentence of the article. (Calculated by using vector representations) Wordcloud: Top N most frequently appeared non-trivial words. (NLTK) Sentiment: The decomposed sentiment scores. Whether it has positive, negative, neutral, or compound sentiment.</description>
     </item>
     
     <item>
