@@ -26,5 +26,14 @@ Have you encountered a long article that you just don&amp;rsquo;t have the time 
       <description>Pactum serva.</description>
     </item>
     
+    <item>
+      <title>Schedule</title>
+      <link>http://schneeboat.github.io/cal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://schneeboat.github.io/cal/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
