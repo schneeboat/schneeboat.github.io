@@ -2,34 +2,34 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Alexia</title>
-    <link>http://schneeboat.github.io/</link>
+    <link>http://missalexia.com/</link>
     <description>Recent content on Alexia</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://schneeboat.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="http://missalexia.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>http://schneeboat.github.io/about/</link>
+      <link>http://missalexia.com/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://schneeboat.github.io/about/</guid>
+      <guid>http://missalexia.com/about/</guid>
       <description>About Pactum serva.</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://schneeboat.github.io/cal/</link>
+      <link>http://missalexia.com/cal/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://schneeboat.github.io/cal/</guid>
+      <guid>http://missalexia.com/cal/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A simple text analysis tool</title>
-      <link>http://schneeboat.github.io/stories/001/</link>
+      <link>http://missalexia.com/stories/001/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://schneeboat.github.io/stories/001/</guid>
+      <guid>http://missalexia.com/stories/001/</guid>
       <description>📌 Click Here.
 Have you encountered a long article that you just don&amp;rsquo;t have the time to read? Here is a trick to help you grasp the main idea. Just by copy-pasting the text, you will see the following:
  Summary: The most crucial sentence of the article. (Calculated by using vector representations) Wordcloud: Top N most frequently appeared non-trivial words. (NLTK) Sentiment: The decomposed sentiment scores. Whether it has positive, negative, neutral, or compound sentiment.</description>
