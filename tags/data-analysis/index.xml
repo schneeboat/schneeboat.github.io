@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>data analysis on Alexia</title>
+    <link>http://missalexia.com/tags/data-analysis/</link>
+    <description>Recent content in data analysis on Alexia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 09 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://missalexia.com/tags/data-analysis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Social Network Analysis 3</title>
+      <link>http://missalexia.com/stories/network-analysis-3/</link>
+      <pubDate>Sat, 09 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://missalexia.com/stories/network-analysis-3/</guid>
+      <description>Part 3</description>
+    </item>
+    
+    <item>
+      <title>Social Network Analysis 2</title>
+      <link>http://missalexia.com/stories/network-analysis-2/</link>
+      <pubDate>Thu, 24 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://missalexia.com/stories/network-analysis-2/</guid>
+      <description>Part 2</description>
+    </item>
+    
+    <item>
+      <title>Social Network Analysis</title>
+      <link>http://missalexia.com/stories/network-analysis-1/</link>
+      <pubDate>Mon, 14 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://missalexia.com/stories/network-analysis-1/</guid>
+      <description>Part 1</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -5,23 +5,87 @@
     <link>http://missalexia.com/</link>
     <description>Recent content on Alexia</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://missalexia.com/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Sat, 08 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://missalexia.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title></title>
-      <link>http://missalexia.com/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>A Simple Text Analysis Tool</title>
+      <link>http://missalexia.com/stories/natural-language-processing-app/</link>
+      <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://missalexia.com/about/</guid>
-      <description>About Pactum serva.</description>
+      <guid>http://missalexia.com/stories/natural-language-processing-app/</guid>
+      <description>NLP &amp;amp; Streamlit</description>
     </item>
     
     <item>
-      <title></title>
-      <link>http://missalexia.com/cal/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Microservices Model</title>
+      <link>http://missalexia.com/stories/microservices/</link>
+      <pubDate>Thu, 25 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://missalexia.com/cal/</guid>
-      <description></description>
+      <guid>http://missalexia.com/stories/microservices/</guid>
+      <description>Something technical</description>
+    </item>
+    
+    <item>
+      <title>Social Network Analysis 3</title>
+      <link>http://missalexia.com/stories/network-analysis-3/</link>
+      <pubDate>Sat, 09 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://missalexia.com/stories/network-analysis-3/</guid>
+      <description>Part 3</description>
+    </item>
+    
+    <item>
+      <title>Social Network Analysis 2</title>
+      <link>http://missalexia.com/stories/network-analysis-2/</link>
+      <pubDate>Thu, 24 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://missalexia.com/stories/network-analysis-2/</guid>
+      <description>Part 2</description>
+    </item>
+    
+    <item>
+      <title>Social Network Analysis</title>
+      <link>http://missalexia.com/stories/network-analysis-1/</link>
+      <pubDate>Mon, 14 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://missalexia.com/stories/network-analysis-1/</guid>
+      <description>Part 1</description>
+    </item>
+    
+    <item>
+      <title>A Mixed-integer Programming Problem</title>
+      <link>http://missalexia.com/stories/mixed-integer-programming/</link>
+      <pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://missalexia.com/stories/mixed-integer-programming/</guid>
+      <description>Something mathematical</description>
+    </item>
+    
+    <item>
+      <title>A Blending Problem with XPRESS</title>
+      <link>http://missalexia.com/stories/blending-problem/</link>
+      <pubDate>Sun, 29 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://missalexia.com/stories/blending-problem/</guid>
+      <description>Something mathematical</description>
+    </item>
+    
+    <item>
+      <title>An Optimization Model Case in AMPL</title>
+      <link>http://missalexia.com/stories/optimization-model/</link>
+      <pubDate>Tue, 10 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://missalexia.com/stories/optimization-model/</guid>
+      <description>Something mathematical</description>
+    </item>
+    
+    <item>
+      <title>H-index &amp; G-index</title>
+      <link>http://missalexia.com/stories/h-index-g-index/</link>
+      <pubDate>Sat, 24 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://missalexia.com/stories/h-index-g-index/</guid>
+      <description>Explained with code</description>
     </item>
     
     <item>
@@ -36,15 +100,23 @@ Cookies do not typically contain any information that personally identifies a us
     </item>
     
     <item>
-      <title>A simple text analysis tool</title>
-      <link>http://missalexia.com/stories/001/</link>
+      <title>About</title>
+      <link>http://missalexia.com/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://missalexia.com/stories/001/</guid>
-      <description>📌 Click Here.
-Have you encountered a long article that you just don&amp;rsquo;t have the time to read? Here is a trick to help you grasp the main idea. Just by copy-pasting the text, you will see the following:
- Summary: The most crucial sentence of the article. (Calculated by using vector representations) Wordcloud: Top N most frequently appeared non-trivial words. (NLTK) Sentiment: The decomposed sentiment scores. Whether it has positive, negative, neutral, or compound sentiment.</description>
+      <guid>http://missalexia.com/about/</guid>
+      <description>Pactum serva.</description>
     </item>
+    
+    <item>
+      <title>About</title>
+      <link>http://missalexia.com/stories/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://missalexia.com/stories/about/</guid>
+      <description>Pactum serva.</description>
+    </item>
+    
     
   </channel>
 </rss>

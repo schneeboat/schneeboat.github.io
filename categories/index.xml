@@ -5,6 +5,25 @@
     <link>http://missalexia.com/categories/</link>
     <description>Recent content in Categories on Alexia</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://missalexia.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Sat, 08 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://missalexia.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>hello</title>
+      <link>http://missalexia.com/categories/hello/</link>
+      <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://missalexia.com/categories/hello/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>http://missalexia.com/categories/python/</link>
+      <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://missalexia.com/categories/python/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

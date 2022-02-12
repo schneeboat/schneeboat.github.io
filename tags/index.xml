@@ -5,6 +5,151 @@
     <link>http://missalexia.com/tags/</link>
     <description>Recent content in Tags on Alexia</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://missalexia.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Sat, 08 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://missalexia.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>nlp</title>
+      <link>http://missalexia.com/tags/nlp/</link>
+      <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://missalexia.com/tags/nlp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>http://missalexia.com/tags/python/</link>
+      <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://missalexia.com/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>streamlit</title>
+      <link>http://missalexia.com/tags/streamlit/</link>
+      <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://missalexia.com/tags/streamlit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>API</title>
+      <link>http://missalexia.com/tags/api/</link>
+      <pubDate>Thu, 25 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://missalexia.com/tags/api/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>microservices</title>
+      <link>http://missalexia.com/tags/microservices/</link>
+      <pubDate>Thu, 25 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://missalexia.com/tags/microservices/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>model</title>
+      <link>http://missalexia.com/tags/model/</link>
+      <pubDate>Thu, 25 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://missalexia.com/tags/model/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Node.js</title>
+      <link>http://missalexia.com/tags/node.js/</link>
+      <pubDate>Thu, 25 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://missalexia.com/tags/node.js/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data analysis</title>
+      <link>http://missalexia.com/tags/data-analysis/</link>
+      <pubDate>Sat, 09 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://missalexia.com/tags/data-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>math</title>
+      <link>http://missalexia.com/tags/math/</link>
+      <pubDate>Sat, 09 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://missalexia.com/tags/math/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>network analysis</title>
+      <link>http://missalexia.com/tags/network-analysis/</link>
+      <pubDate>Sat, 09 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://missalexia.com/tags/network-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AMPL</title>
+      <link>http://missalexia.com/tags/ampl/</link>
+      <pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://missalexia.com/tags/ampl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>optimization</title>
+      <link>http://missalexia.com/tags/optimization/</link>
+      <pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://missalexia.com/tags/optimization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>XPRESS</title>
+      <link>http://missalexia.com/tags/xpress/</link>
+      <pubDate>Sun, 29 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://missalexia.com/tags/xpress/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>g-index</title>
+      <link>http://missalexia.com/tags/g-index/</link>
+      <pubDate>Sat, 24 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://missalexia.com/tags/g-index/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>h-index</title>
+      <link>http://missalexia.com/tags/h-index/</link>
+      <pubDate>Sat, 24 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://missalexia.com/tags/h-index/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>network science</title>
+      <link>http://missalexia.com/tags/network-science/</link>
+      <pubDate>Sat, 24 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://missalexia.com/tags/network-science/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
