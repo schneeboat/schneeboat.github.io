@@ -8,11 +8,11 @@
     <language>en-us</language>
     <lastBuildDate>Sat, 08 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://missalexia.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>nlp</title>
-      <link>http://missalexia.com/tags/nlp/</link>
+      <title>natural language processing</title>
+      <link>http://missalexia.com/tags/natural-language-processing/</link>
       <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://missalexia.com/tags/nlp/</guid>
+      <guid>http://missalexia.com/tags/natural-language-processing/</guid>
       <description></description>
     </item>
     
@@ -80,6 +80,15 @@
     </item>
     
     <item>
+      <title>process</title>
+      <link>http://missalexia.com/tags/process/</link>
+      <pubDate>Thu, 12 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://missalexia.com/tags/process/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>data analysis</title>
       <link>http://missalexia.com/tags/data-analysis/</link>
       <pubDate>Sat, 09 Jan 2021 00:00:00 +0000</pubDate>
@@ -89,29 +98,11 @@
     </item>
     
     <item>
-      <title>math</title>
-      <link>http://missalexia.com/tags/math/</link>
+      <title>social network analysis</title>
+      <link>http://missalexia.com/tags/social-network-analysis/</link>
       <pubDate>Sat, 09 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://missalexia.com/tags/math/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>network analysis</title>
-      <link>http://missalexia.com/tags/network-analysis/</link>
-      <pubDate>Sat, 09 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>http://missalexia.com/tags/network-analysis/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>AMPL</title>
-      <link>http://missalexia.com/tags/ampl/</link>
-      <pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate>
-      
-      <guid>http://missalexia.com/tags/ampl/</guid>
+      <guid>http://missalexia.com/tags/social-network-analysis/</guid>
       <description></description>
     </item>
     
@@ -121,42 +112,6 @@
       <pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>http://missalexia.com/tags/optimization/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>XPRESS</title>
-      <link>http://missalexia.com/tags/xpress/</link>
-      <pubDate>Sun, 29 Nov 2020 00:00:00 +0000</pubDate>
-      
-      <guid>http://missalexia.com/tags/xpress/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>g-index</title>
-      <link>http://missalexia.com/tags/g-index/</link>
-      <pubDate>Sat, 24 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>http://missalexia.com/tags/g-index/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>h-index</title>
-      <link>http://missalexia.com/tags/h-index/</link>
-      <pubDate>Sat, 24 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>http://missalexia.com/tags/h-index/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>network science</title>
-      <link>http://missalexia.com/tags/network-science/</link>
-      <pubDate>Sat, 24 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>http://missalexia.com/tags/network-science/</guid>
       <description></description>
     </item>
     
