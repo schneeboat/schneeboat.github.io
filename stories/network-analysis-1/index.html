@@ -38,7 +38,7 @@
 <meta name=twitter:title content="Social Network Analysis">
 <meta name=twitter:description content="Part 1">
 <script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":2,"name":"Stories","item":"http://missalexia.com/stories/"},{"@type":"ListItem","position":3,"name":"Social Network Analysis","item":"http://missalexia.com/stories/network-analysis-1/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Social Network Analysis","name":"Social Network Analysis","description":"Part 1","keywords":["social network analysis","data analysis","python"],"articleBody":"There are plenty of resources on the internet about the definitions of social network. Always feel free to check them out before reading this:)\nMy ‘definition’: A social network is like a giant graph, each node represents a unique entity, there’s 1 edge between 2 nodes if there’s 1 connection (e.g. 1 collaboration) between them. And it is very important to consider self-loop and multiple edges.\nI have to mention co-authorship analysis again. Now, imagine, there is a scientific publication, there are several authors writing it together, the authors may come from the same institution (maybe from different departments), or from different institutions. And they may come from different countries, or worse, from the same country.\nNow, consider 3 different networks: NW1: node = author\nNW2: node = institution\nNW3: node = country\nThere are several important aspects:\nNW1: Although there’s a probability that 2 people share the same name, in my opinion, it’s really negligible in our network. For that matter, if a publication is written solely by 1 author, it’s pointless to say he collaborated with himself.\nNW2 \u0026 NW3: They are a little tricky. For example:\nScenario 1: There is a publication, with 6 authors, all coming from Hungary, then, {Hungary(node), Hungary(node), 1(#edge)}. Why? Because there is only 1 publication.\nScenario 2: There is a publication, with 6 authors, 2 of them from Hungary, 3 of them from Poland, 1 from Slovakia, then {Hungary, Poland, 1}, {Hungary, Slovakia, 1}, {Poland, Slovakia, 1}\nExample: Input:\nIn the second list, we can assume that in each sublist, every element is unique.\nOutput:\n node: country   node: author  The algorithm is very simple:\n","wordCount":"272","inLanguage":"en","datePublished":"2020-12-14T00:00:00Z","dateModified":"2020-12-14T00:00:00Z","mainEntityOfPage":{"@type":"WebPage","@id":"http://missalexia.com/stories/network-analysis-1/"},"publisher":{"@type":"Organization","name":"Alexia","logo":{"@type":"ImageObject","url":"https://raw.githubusercontent.com/twitter/twemoji/master/assets/svg/1f497.svg"}}}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Social Network Analysis","name":"Social Network Analysis","description":"Part 1","keywords":["social network analysis","data analysis","python"],"articleBody":"There are plenty of resources on the internet about the definitions of social network. Always feel free to check them out before reading this:)\nMy ‘definition’: A social network is like a giant graph, each node represents a unique entity, there’s 1 edge between 2 nodes if there’s 1 connection (e.g. 1 collaboration) between them. And it is very important to consider self-loop and multiple edges.\nI have to mention co-authorship analysis again. Now, imagine, there is a scientific publication, there are several authors writing it together, the authors may come from the same institution (maybe from different departments), or from different institutions. And they may come from different countries, or worse, from the same country.\nNow, consider 3 different networks: NW1: node = author\nNW2: node = institution\nNW3: node = country\nThere are several important aspects:\nNW1: Although there’s a probability that 2 people share the same name, in my opinion, it’s really negligible in our network. For that matter, if a publication is written solely by 1 author, it’s pointless to say he collaborated with himself.\nNW2 \u0026 NW3: They are a little tricky. For example:\nScenario 1: There is a publication, with 6 authors, all coming from Hungary, then, {Hungary(node), Hungary(node), 1(#edge)}. Why? Because there is only 1 publication.\nScenario 2: There is a publication, with 6 authors, 2 of them from Hungary, 3 of them from Poland, 1 from Slovakia, then {Hungary, Poland, 1}, {Hungary, Slovakia, 1}, {Poland, Slovakia, 1}\nExample: Input:\neach_letter_is_a_country = [['A', 'B', 'D'], ['C', 'C', 'E', 'A'], ['D', 'C', 'F'], ['H'], ['C', 'D'], ['B', 'B', 'B']] each_letter_is_an_author = [['A', 'B'], ['B', 'H', 'C'], ['F', 'C', 'A']]  In the second list, we can assume that in each sublist, every element is unique.\nOutput:\n node: country   node: author  The algorithm is very simple:\ndef get_adjacency_dict_multi_loop(matrix): unik = [] for i in matrix: for j in i: unik.append(j) keys = list(set(unik)) dictionary_node={} for key in keys: value=[] for sublist in matrix: if key in sublist: li = list(sublist) li.remove(key) value=value+list(set(li)) dictionary_node[key]=value return dictionary_node ","wordCount":"339","inLanguage":"en","datePublished":"2020-12-14T00:00:00Z","dateModified":"2020-12-14T00:00:00Z","mainEntityOfPage":{"@type":"WebPage","@id":"http://missalexia.com/stories/network-analysis-1/"},"publisher":{"@type":"Organization","name":"Alexia","logo":{"@type":"ImageObject","url":"https://raw.githubusercontent.com/twitter/twemoji/master/assets/svg/1f497.svg"}}}</script>
 </head>
 <body id=top>
 <script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
@@ -103,8 +103,15 @@ Social Network Analysis
 <p><strong>Scenario 2</strong>: There is a publication, with 6 authors, 2 of them from Hungary, 3 of them from Poland, 1 from Slovakia, then {Hungary, Poland, 1}, {Hungary, Slovakia, 1}, {Poland, Slovakia, 1}</p>
 <h3 id=example>Example:<a hidden class=anchor aria-hidden=true href=#example>#</a></h3>
 <p><strong>Input</strong>:</p>
-<p><img loading=lazy src=./1.png alt>
-</p>
+<pre><code>each_letter_is_a_country = [['A', 'B', 'D'],
+                            ['C', 'C', 'E', 'A'], 
+                            ['D', 'C', 'F'], ['H'], 
+                            ['C', 'D'], ['B', 'B', 'B']]
+
+each_letter_is_an_author = [['A', 'B'], 
+                            ['B', 'H', 'C'], 
+                            ['F', 'C', 'A']]
+</code></pre>
 <p>In the second list, we can assume that in each sublist, every element is unique.</p>
 <p><strong>Output</strong>:</p>
 <ul>
@@ -118,8 +125,25 @@ Social Network Analysis
 <p><img loading=lazy src=./3.png alt>
 </p>
 <p>The algorithm is very simple:</p>
-<p><img loading=lazy src=./4.png alt>
-</p>
+<pre><code>def get_adjacency_dict_multi_loop(matrix):
+    unik = []
+    for i in matrix:
+        for j in i:
+            unik.append(j)
+
+    keys = list(set(unik))
+    
+    dictionary_node={}
+    for key in keys:
+        value=[]
+        for sublist in matrix:
+            if key in sublist:
+                li = list(sublist)
+                li.remove(key)
+                value=value+list(set(li))        
+        dictionary_node[key]=value
+
+    return dictionary_node</code></pre>
 </div>
 <footer class=post-footer>
 <ul class=post-tags>

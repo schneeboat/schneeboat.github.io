@@ -17,6 +17,15 @@
     </item>
     
     <item>
+      <title>Print Numbers with Python</title>
+      <link>http://missalexia.com/stories/print_number_with_python/</link>
+      <pubDate>Wed, 22 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://missalexia.com/stories/print_number_with_python/</guid>
+      <description>A python clock. Have fun.</description>
+    </item>
+    
+    <item>
       <title>Microservices Model</title>
       <link>http://missalexia.com/stories/microservices/</link>
       <pubDate>Thu, 25 Nov 2021 00:00:00 +0000</pubDate>
@@ -133,15 +142,6 @@ Cookies do not typically contain any information that personally identifies a us
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://missalexia.com/contact/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Digital Clock</title>
-      <link>http://missalexia.com/code/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://missalexia.com/code/</guid>
       <description></description>
     </item>
     
