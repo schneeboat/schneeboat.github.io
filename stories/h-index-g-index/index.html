@@ -7,14 +7,14 @@
 <meta name=keywords content="social network analysis,python">
 <meta name=description content="Explained with code">
 <meta name=author content>
-<link rel=canonical href=http://missalexia.com/stories/h-index-g-index/>
+<link rel=canonical href=https://missalexia.com/stories/h-index-g-index/>
 <link crossorigin=anonymous href=/assets/css/stylesheet.min.6ac43e9a82ae18c84adf9998a8359f9fd7111efe018648e6d887820c2060acfd.css integrity="sha256-asQ+moKuGMhK35mYqDWfn9cRHv4Bhkjm2IeCDCBgrP0=" rel="preload stylesheet" as=style>
 <script defer crossorigin=anonymous src=/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5+kdJvBz5iKbt6B5PJI=" onload=hljs.initHighlightingOnLoad()></script>
 <link rel=icon href=https://raw.githubusercontent.com/twitter/twemoji/master/assets/svg/1f497.svg>
-<link rel=icon type=image/png sizes=16x16 href=http://missalexia.com/favicon-16x16.png>
-<link rel=icon type=image/png sizes=32x32 href=http://missalexia.com/favicon-32x32.png>
-<link rel=apple-touch-icon href=http://missalexia.com/apple-touch-icon.png>
-<link rel=mask-icon href=http://missalexia.com/safari-pinned-tab.svg>
+<link rel=icon type=image/png sizes=16x16 href=https://missalexia.com/favicon-16x16.png>
+<link rel=icon type=image/png sizes=32x32 href=https://missalexia.com/favicon-32x32.png>
+<link rel=apple-touch-icon href=https://missalexia.com/apple-touch-icon.png>
+<link rel=mask-icon href=https://missalexia.com/safari-pinned-tab.svg>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
 <meta name=generator content="Hugo 0.88.1">
@@ -31,21 +31,21 @@
 <script>function createCookie(d,e,b){var c="",a;b&&(a=new Date,a.setTime(a.getTime()+b*24*60*60*1e3),c="; expires="+a.toUTCString()),document.cookie=d+"="+e+c+"; path=/"}function readCookie(e){for(var c=e+"=",d=document.cookie.split(';'),b=0,a;b<d.length;b++){for(a=d[b];a.charAt(0)==' ';)a=a.substring(1,a.length);if(a.indexOf(c)==0)return a.substring(c.length,a.length)}return null}function eraseCookie(a){createCookie(a,"",-1)}if(readCookie('cookie-notice-option')=='true'){function loadScriptAsync(c,b){if(typeof b!='function')throw new Error('Not a valid callback for async script load');var a=document.createElement('script');a.onload=b,a.src=c,document.head.appendChild(a)}loadScriptAsync('https://www.googletagmanager.com/gtag/js?id=G-63HR5W5PT1',function(){window.dataLayer=window.dataLayer||[];function a(){dataLayer.push(arguments)}a('js',new Date),a('config','G-63HR5W5PT1',{anonymize_ip:!0})})}else readCookie('cookie-notice-option')!='false'&&(document.getElementById('cookie-notice').style.display='block');document.getElementById('cookie-notice-accept').addEventListener("click",function(){createCookie('cookie-notice-option','true',31),document.getElementById('cookie-notice').style.display='none',location.reload()}),document.getElementById('cookie-notice-deny').addEventListener("click",function(){createCookie('cookie-notice-option','false',31),document.getElementById('cookie-notice').style.display='none',location.reload()})</script><meta property="og:title" content="H-index & G-index">
 <meta property="og:description" content="Explained with code">
 <meta property="og:type" content="article">
-<meta property="og:url" content="http://missalexia.com/stories/h-index-g-index/"><meta property="article:section" content="stories">
+<meta property="og:url" content="https://missalexia.com/stories/h-index-g-index/"><meta property="article:section" content="stories">
 <meta property="article:published_time" content="2020-10-24T00:00:00+00:00">
 <meta property="article:modified_time" content="2020-10-24T00:00:00+00:00"><meta property="og:site_name" content="Alexia">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="H-index & G-index">
 <meta name=twitter:description content="Explained with code">
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":2,"name":"Stories","item":"http://missalexia.com/stories/"},{"@type":"ListItem","position":3,"name":"H-index \u0026 G-index","item":"http://missalexia.com/stories/h-index-g-index/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"H-index \u0026 G-index","name":"H-index \u0026 G-index","description":"Explained with code","keywords":["social network analysis","python"],"articleBody":"If you have ever encountered bibliographic analysis, you might have heard the terms h-index and g-index. Here, I will explain what they are and how to implement them with python code.\nThe h-index is an author-level metric that measures both the productivity and citation impact of the publications of a scientist or scholar. It can also be applied to the productivity and impact of a scholarly journal as well as a group of scientists, say, a department or university or country. So, both productivity and impact are required for a high h-index. Neither a few highly cited papers nor a long list of papers with only a handful of citations will yield a high h-index.\nNow comes the definition.\nh-index (f) = max { i ∈ ℕ: f (i) ≥ i }, where f is the function that corresponds to the number of citations for each publication ordered in decreasing order. In other words, first, we order the number of citations for each publication of that person in decreasing order, then compare each number with its corresponding index. The h-index is the number of citations where it is greater than or equal to its index. I will give you 2 examples.\nResearcher Alice has 5 publications: A, B, C, D, E, cited 21, 6, 5, 4, 3 times respectively. Since it is already ordered, we can put them directly in a table.\nIt’s not hard to see that publication D has the same number of citations and the index. So, the h-index for Alice is 4.\nResearcher Bob has 6 publications: A, B, C, D, E, F, cited 24, 6, 12, 36, 2, 2 times respectively. First, we order them in decreasing order and put them on the table.\nAfter comparing, we see E has index number 5, where else the number of citations is 2. Thus, the h-index for Bob is 4.\nHow to do it in Python? In my example, I want to calculate h-index for each author. Note that in my author columns there can be many authors, and each author can appear in many columns.\nBasic idea is, set each individual author in a single row, and map the corresponding number of times cited together in a list in a new column.\nFirst, I select relevant columns and drop null values, then I split strings in the author column and transform them into different rows, drop irrelevant columns.\nSince in the Authors column, each person can appear many times (i.e. they write more than 1 paper). Create a new data frame by grouping authors, here I use an aggregate function, which applies the functions inside to each unique authors, then it will return a list of all the entries in Times Cited for the specific author.\nThen, I define a basic function that returns the h_index. There are many ways to do it for sure. I first turn an unsorted list into a sorted list in decreasing order, then compare each element in the list to its index+1. Since the elements are decreasing and the indexes are increasing, the code below will surely find the correct index value.\ndef h_index(li): li_sorted=sorted(li, reverse=True) for i in li_sorted: if i  Finally, I create a new column to store h_index by applying the defined function on the time cited list columns. After refining the data frame, you will get the final result.\nVery simple! There are also many creative ways to give more information to your h-index summary statistics. For example, you can add more dimensions of data, such as the author’s research area, country, university, etc.\nLet’s quickly talk about the g-index. If you already know h-index, then g-index is very easy to understand. The algorithm is: First, sort the list in descending order, then, iterate over the list, for each element, compare the sum term up to the element you are standing at with the index squared, stop at the point where index squared is ≥ the sum term.\ndef g_index(li): li_sorted = sorted(li, reverse=True) for i in li_sorted: if sum(li_sorted[:li_sorted.index(i)+1]) ","wordCount":"682","inLanguage":"en","datePublished":"2020-10-24T00:00:00Z","dateModified":"2020-10-24T00:00:00Z","mainEntityOfPage":{"@type":"WebPage","@id":"http://missalexia.com/stories/h-index-g-index/"},"publisher":{"@type":"Organization","name":"Alexia","logo":{"@type":"ImageObject","url":"https://raw.githubusercontent.com/twitter/twemoji/master/assets/svg/1f497.svg"}}}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":2,"name":"Stories","item":"https://missalexia.com/stories/"},{"@type":"ListItem","position":3,"name":"H-index \u0026 G-index","item":"https://missalexia.com/stories/h-index-g-index/"}]}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"H-index \u0026 G-index","name":"H-index \u0026 G-index","description":"Explained with code","keywords":["social network analysis","python"],"articleBody":"If you have ever encountered bibliographic analysis, you might have heard the terms h-index and g-index. Here, I will explain what they are and how to implement them with python code.\nThe h-index is an author-level metric that measures both the productivity and citation impact of the publications of a scientist or scholar. It can also be applied to the productivity and impact of a scholarly journal as well as a group of scientists, say, a department or university or country. So, both productivity and impact are required for a high h-index. Neither a few highly cited papers nor a long list of papers with only a handful of citations will yield a high h-index.\nNow comes the definition.\nh-index (f) = max { i ∈ ℕ: f (i) ≥ i }, where f is the function that corresponds to the number of citations for each publication ordered in decreasing order. In other words, first, we order the number of citations for each publication of that person in decreasing order, then compare each number with its corresponding index. The h-index is the number of citations where it is greater than or equal to its index. I will give you 2 examples.\nResearcher Alice has 5 publications: A, B, C, D, E, cited 21, 6, 5, 4, 3 times respectively. Since it is already ordered, we can put them directly in a table.\nIt’s not hard to see that publication D has the same number of citations and the index. So, the h-index for Alice is 4.\nResearcher Bob has 6 publications: A, B, C, D, E, F, cited 24, 6, 12, 36, 2, 2 times respectively. First, we order them in decreasing order and put them on the table.\nAfter comparing, we see E has index number 5, where else the number of citations is 2. Thus, the h-index for Bob is 4.\nHow to do it in Python? In my example, I want to calculate h-index for each author. Note that in my author columns there can be many authors, and each author can appear in many columns.\nBasic idea is, set each individual author in a single row, and map the corresponding number of times cited together in a list in a new column.\nFirst, I select relevant columns and drop null values, then I split strings in the author column and transform them into different rows, drop irrelevant columns.\nSince in the Authors column, each person can appear many times (i.e. they write more than 1 paper). Create a new data frame by grouping authors, here I use an aggregate function, which applies the functions inside to each unique authors, then it will return a list of all the entries in Times Cited for the specific author.\nThen, I define a basic function that returns the h_index. There are many ways to do it for sure. I first turn an unsorted list into a sorted list in decreasing order, then compare each element in the list to its index+1. Since the elements are decreasing and the indexes are increasing, the code below will surely find the correct index value.\ndef h_index(li): li_sorted=sorted(li, reverse=True) for i in li_sorted: if i  Finally, I create a new column to store h_index by applying the defined function on the time cited list columns. After refining the data frame, you will get the final result.\nVery simple! There are also many creative ways to give more information to your h-index summary statistics. For example, you can add more dimensions of data, such as the author’s research area, country, university, etc.\nLet’s quickly talk about the g-index. If you already know h-index, then g-index is very easy to understand. The algorithm is: First, sort the list in descending order, then, iterate over the list, for each element, compare the sum term up to the element you are standing at with the index squared, stop at the point where index squared is ≥ the sum term.\ndef g_index(li): li_sorted = sorted(li, reverse=True) for i in li_sorted: if sum(li_sorted[:li_sorted.index(i)+1]) ","wordCount":"682","inLanguage":"en","datePublished":"2020-10-24T00:00:00Z","dateModified":"2020-10-24T00:00:00Z","mainEntityOfPage":{"@type":"WebPage","@id":"https://missalexia.com/stories/h-index-g-index/"},"publisher":{"@type":"Organization","name":"Alexia","logo":{"@type":"ImageObject","url":"https://raw.githubusercontent.com/twitter/twemoji/master/assets/svg/1f497.svg"}}}</script>
 </head>
 <body id=top>
 <script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
 <header class=header>
 <nav class=nav>
 <div class=logo>
-<a href=http://missalexia.com accesskey=h title="Home (Alt + H)">Home</a>
+<a href=https://missalexia.com accesskey=h title="Home (Alt + H)">Home</a>
 <span class=logo-switches>
 <button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
 </button>
@@ -53,12 +53,12 @@
 </div>
 <ul id=menu>
 <li>
-<a href=http://missalexia.com/resume/ title=About>
+<a href=https://missalexia.com/resume/ title=About>
 <span>About</span>
 </a>
 </li>
 <li>
-<a href=http://missalexia.com/contact/ title=Contact>
+<a href=https://missalexia.com/contact/ title=Contact>
 <span>Contact</span>
 </a>
 </li>
@@ -68,7 +68,7 @@
 <main class=main>
 <article class=post-single>
 <header class=post-header>
-<div class=breadcrumbs><a href=http://missalexia.com>Home</a>&nbsp;»&nbsp;<a href=http://missalexia.com/stories/>Stories</a></div>
+<div class=breadcrumbs><a href=https://missalexia.com>Home</a>&nbsp;»&nbsp;<a href=https://missalexia.com/stories/>Stories</a></div>
 <h1 class=post-title>
 H-index & G-index
 </h1>
@@ -121,16 +121,16 @@ H-index & G-index
 </div>
 <footer class=post-footer>
 <ul class=post-tags>
-<li><a href=http://missalexia.com/tags/social-network-analysis/>social network analysis</a></li>
-<li><a href=http://missalexia.com/tags/python/>python</a></li>
+<li><a href=https://missalexia.com/tags/social-network-analysis/>social network analysis</a></li>
+<li><a href=https://missalexia.com/tags/python/>python</a></li>
 </ul>
 <nav class=paginav>
-<a class=prev href=http://missalexia.com/stories/optimization-model/>
+<a class=prev href=https://missalexia.com/stories/optimization-model/>
 <span class=title>« Prev Page</span>
 <br>
 <span>An Optimization Model Case in AMPL</span>
 </a>
-<a class=next href=http://missalexia.com/stories/about/>
+<a class=next href=https://missalexia.com/stories/about/>
 <span class=title>Next Page »</span>
 <br>
 <span>About</span>

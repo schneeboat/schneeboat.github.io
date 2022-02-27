@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>streamlit on Alexia</title>
-    <link>http://missalexia.com/tags/streamlit/</link>
+    <link>https://missalexia.com/tags/streamlit/</link>
     <description>Recent content in streamlit on Alexia</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://missalexia.com/tags/streamlit/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 08 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://missalexia.com/tags/streamlit/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A Simple Text Analysis Tool</title>
-      <link>http://missalexia.com/stories/natural-language-processing-app/</link>
+      <link>https://missalexia.com/stories/natural-language-processing-app/</link>
       <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://missalexia.com/stories/natural-language-processing-app/</guid>
+      <guid>https://missalexia.com/stories/natural-language-processing-app/</guid>
       <description>NLP &amp;amp; Streamlit</description>
     </item>
     

@@ -2,53 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>model on Alexia</title>
-    <link>http://missalexia.com/tags/model/</link>
+    <link>https://missalexia.com/tags/model/</link>
     <description>Recent content in model on Alexia</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 25 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://missalexia.com/tags/model/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 25 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://missalexia.com/tags/model/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Microservices Model</title>
-      <link>http://missalexia.com/stories/microservices/</link>
+      <link>https://missalexia.com/stories/microservices/</link>
       <pubDate>Thu, 25 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://missalexia.com/stories/microservices/</guid>
+      <guid>https://missalexia.com/stories/microservices/</guid>
       <description>Something technical</description>
     </item>
     
     <item>
       <title>Process Diagram: Service Request</title>
-      <link>http://missalexia.com/stories/process-diagram-service-request/</link>
+      <link>https://missalexia.com/stories/process-diagram-service-request/</link>
       <pubDate>Thu, 12 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://missalexia.com/stories/process-diagram-service-request/</guid>
+      <guid>https://missalexia.com/stories/process-diagram-service-request/</guid>
       <description>Simple business process for self-serving services</description>
     </item>
     
     <item>
       <title>A Mixed-integer Programming Problem</title>
-      <link>http://missalexia.com/stories/mixed-integer-programming/</link>
+      <link>https://missalexia.com/stories/mixed-integer-programming/</link>
       <pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://missalexia.com/stories/mixed-integer-programming/</guid>
+      <guid>https://missalexia.com/stories/mixed-integer-programming/</guid>
       <description>Something mathematical</description>
     </item>
     
     <item>
       <title>A Blending Problem with XPRESS</title>
-      <link>http://missalexia.com/stories/blending-problem/</link>
+      <link>https://missalexia.com/stories/blending-problem/</link>
       <pubDate>Sun, 29 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://missalexia.com/stories/blending-problem/</guid>
+      <guid>https://missalexia.com/stories/blending-problem/</guid>
       <description>Something mathematical</description>
     </item>
     
     <item>
       <title>An Optimization Model Case in AMPL</title>
-      <link>http://missalexia.com/stories/optimization-model/</link>
+      <link>https://missalexia.com/stories/optimization-model/</link>
       <pubDate>Tue, 10 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://missalexia.com/stories/optimization-model/</guid>
+      <guid>https://missalexia.com/stories/optimization-model/</guid>
       <description>Something mathematical</description>
     </item>
     

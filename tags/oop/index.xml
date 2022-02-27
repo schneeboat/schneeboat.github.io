@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>oop on Alexia</title>
-    <link>http://missalexia.com/tags/oop/</link>
+    <link>https://missalexia.com/tags/oop/</link>
     <description>Recent content in oop on Alexia</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://missalexia.com/tags/oop/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 22 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://missalexia.com/tags/oop/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Print Numbers with Python</title>
-      <link>http://missalexia.com/stories/print_number_with_python/</link>
+      <link>https://missalexia.com/stories/print_number_with_python/</link>
       <pubDate>Wed, 22 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://missalexia.com/stories/print_number_with_python/</guid>
+      <guid>https://missalexia.com/stories/print_number_with_python/</guid>
       <description>A python clock. Have fun.</description>
     </item>
     

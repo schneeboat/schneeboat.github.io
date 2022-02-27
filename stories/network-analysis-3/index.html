@@ -7,14 +7,14 @@
 <meta name=keywords content="social network analysis,data analysis,python">
 <meta name=description content="Part 3">
 <meta name=author content>
-<link rel=canonical href=http://missalexia.com/stories/network-analysis-3/>
+<link rel=canonical href=https://missalexia.com/stories/network-analysis-3/>
 <link crossorigin=anonymous href=/assets/css/stylesheet.min.6ac43e9a82ae18c84adf9998a8359f9fd7111efe018648e6d887820c2060acfd.css integrity="sha256-asQ+moKuGMhK35mYqDWfn9cRHv4Bhkjm2IeCDCBgrP0=" rel="preload stylesheet" as=style>
 <script defer crossorigin=anonymous src=/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5+kdJvBz5iKbt6B5PJI=" onload=hljs.initHighlightingOnLoad()></script>
 <link rel=icon href=https://raw.githubusercontent.com/twitter/twemoji/master/assets/svg/1f497.svg>
-<link rel=icon type=image/png sizes=16x16 href=http://missalexia.com/favicon-16x16.png>
-<link rel=icon type=image/png sizes=32x32 href=http://missalexia.com/favicon-32x32.png>
-<link rel=apple-touch-icon href=http://missalexia.com/apple-touch-icon.png>
-<link rel=mask-icon href=http://missalexia.com/safari-pinned-tab.svg>
+<link rel=icon type=image/png sizes=16x16 href=https://missalexia.com/favicon-16x16.png>
+<link rel=icon type=image/png sizes=32x32 href=https://missalexia.com/favicon-32x32.png>
+<link rel=apple-touch-icon href=https://missalexia.com/apple-touch-icon.png>
+<link rel=mask-icon href=https://missalexia.com/safari-pinned-tab.svg>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
 <meta name=generator content="Hugo 0.88.1">
@@ -31,21 +31,21 @@
 <script>function createCookie(d,e,b){var c="",a;b&&(a=new Date,a.setTime(a.getTime()+b*24*60*60*1e3),c="; expires="+a.toUTCString()),document.cookie=d+"="+e+c+"; path=/"}function readCookie(e){for(var c=e+"=",d=document.cookie.split(';'),b=0,a;b<d.length;b++){for(a=d[b];a.charAt(0)==' ';)a=a.substring(1,a.length);if(a.indexOf(c)==0)return a.substring(c.length,a.length)}return null}function eraseCookie(a){createCookie(a,"",-1)}if(readCookie('cookie-notice-option')=='true'){function loadScriptAsync(c,b){if(typeof b!='function')throw new Error('Not a valid callback for async script load');var a=document.createElement('script');a.onload=b,a.src=c,document.head.appendChild(a)}loadScriptAsync('https://www.googletagmanager.com/gtag/js?id=G-63HR5W5PT1',function(){window.dataLayer=window.dataLayer||[];function a(){dataLayer.push(arguments)}a('js',new Date),a('config','G-63HR5W5PT1',{anonymize_ip:!0})})}else readCookie('cookie-notice-option')!='false'&&(document.getElementById('cookie-notice').style.display='block');document.getElementById('cookie-notice-accept').addEventListener("click",function(){createCookie('cookie-notice-option','true',31),document.getElementById('cookie-notice').style.display='none',location.reload()}),document.getElementById('cookie-notice-deny').addEventListener("click",function(){createCookie('cookie-notice-option','false',31),document.getElementById('cookie-notice').style.display='none',location.reload()})</script><meta property="og:title" content="Social Network Analysis 3">
 <meta property="og:description" content="Part 3">
 <meta property="og:type" content="article">
-<meta property="og:url" content="http://missalexia.com/stories/network-analysis-3/"><meta property="article:section" content="stories">
+<meta property="og:url" content="https://missalexia.com/stories/network-analysis-3/"><meta property="article:section" content="stories">
 <meta property="article:published_time" content="2021-01-09T00:00:00+00:00">
 <meta property="article:modified_time" content="2021-01-09T00:00:00+00:00"><meta property="og:site_name" content="Alexia">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="Social Network Analysis 3">
 <meta name=twitter:description content="Part 3">
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":2,"name":"Stories","item":"http://missalexia.com/stories/"},{"@type":"ListItem","position":3,"name":"Social Network Analysis 3","item":"http://missalexia.com/stories/network-analysis-3/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Social Network Analysis 3","name":"Social Network Analysis 3","description":"Part 3","keywords":["social network analysis","data analysis","python"],"articleBody":"2 concepts will be introduced: small-world network and scale-free network\nSmall-world network Most nodes are not neighbors of one another, but the neighbors of any given node are likely to be neighbors of each other and most nodes can be reached from every other node by a small number of hops or steps.\nThere are several ways to determine if a network has the ‘small-world’ property. The simplest being:\nL: The typical distance (shortest-length of the path) between 2 randomly chosen nodes in the network. In other words, you need to find the average shortest path length between all randomly chosen pairs of nodes in the network. N: number of nodes in the network. A network is said to be a small-world network (or to satisfy the small-world property) if the mean distance between pairs of nodes is small relative to the total number of nodes in the network. Basically, if L and log N are of the same order of magnitude, then, you can say it is a small-world network.\nBack to our co-authorship network, it is important only to consider the largest component of the whole network. Before calculating, import networkx module.\nAs the calculation showed, L and log N have the same order of magnitude (are on the same scale), so the largest component of the co-authorship network is a ‘small-world’ network.\nScale-free network A scale-free network is a network whose degree distribution follows a power law. (or asymptotically)\nIn a small-world network with a degree distribution following a power-law, deletion of a random node rarely causes a dramatic increase in mean-shortest path length (or a dramatic decrease in the clustering coefficient). This follows from the fact that shortest paths between nodes flow through hubs, and if a peripheral node is deleted it is unlikely to interfere with the passage between other peripheral nodes. As the fraction of peripheral nodes in a small world network is much higher than the fraction of hubs, the probability of deleting an important node is very low.\n","wordCount":"336","inLanguage":"en","datePublished":"2021-01-09T00:00:00Z","dateModified":"2021-01-09T00:00:00Z","mainEntityOfPage":{"@type":"WebPage","@id":"http://missalexia.com/stories/network-analysis-3/"},"publisher":{"@type":"Organization","name":"Alexia","logo":{"@type":"ImageObject","url":"https://raw.githubusercontent.com/twitter/twemoji/master/assets/svg/1f497.svg"}}}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":2,"name":"Stories","item":"https://missalexia.com/stories/"},{"@type":"ListItem","position":3,"name":"Social Network Analysis 3","item":"https://missalexia.com/stories/network-analysis-3/"}]}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Social Network Analysis 3","name":"Social Network Analysis 3","description":"Part 3","keywords":["social network analysis","data analysis","python"],"articleBody":"2 concepts will be introduced: small-world network and scale-free network\nSmall-world network Most nodes are not neighbors of one another, but the neighbors of any given node are likely to be neighbors of each other and most nodes can be reached from every other node by a small number of hops or steps.\nThere are several ways to determine if a network has the ‘small-world’ property. The simplest being:\nL: The typical distance (shortest-length of the path) between 2 randomly chosen nodes in the network. In other words, you need to find the average shortest path length between all randomly chosen pairs of nodes in the network. N: number of nodes in the network. A network is said to be a small-world network (or to satisfy the small-world property) if the mean distance between pairs of nodes is small relative to the total number of nodes in the network. Basically, if L and log N are of the same order of magnitude, then, you can say it is a small-world network.\nBack to our co-authorship network, it is important only to consider the largest component of the whole network. Before calculating, import networkx module.\nAs the calculation showed, L and log N have the same order of magnitude (are on the same scale), so the largest component of the co-authorship network is a ‘small-world’ network.\nScale-free network A scale-free network is a network whose degree distribution follows a power law. (or asymptotically)\nIn a small-world network with a degree distribution following a power-law, deletion of a random node rarely causes a dramatic increase in mean-shortest path length (or a dramatic decrease in the clustering coefficient). This follows from the fact that shortest paths between nodes flow through hubs, and if a peripheral node is deleted it is unlikely to interfere with the passage between other peripheral nodes. As the fraction of peripheral nodes in a small world network is much higher than the fraction of hubs, the probability of deleting an important node is very low.\n","wordCount":"336","inLanguage":"en","datePublished":"2021-01-09T00:00:00Z","dateModified":"2021-01-09T00:00:00Z","mainEntityOfPage":{"@type":"WebPage","@id":"https://missalexia.com/stories/network-analysis-3/"},"publisher":{"@type":"Organization","name":"Alexia","logo":{"@type":"ImageObject","url":"https://raw.githubusercontent.com/twitter/twemoji/master/assets/svg/1f497.svg"}}}</script>
 </head>
 <body id=top>
 <script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
 <header class=header>
 <nav class=nav>
 <div class=logo>
-<a href=http://missalexia.com accesskey=h title="Home (Alt + H)">Home</a>
+<a href=https://missalexia.com accesskey=h title="Home (Alt + H)">Home</a>
 <span class=logo-switches>
 <button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
 </button>
@@ -53,12 +53,12 @@
 </div>
 <ul id=menu>
 <li>
-<a href=http://missalexia.com/resume/ title=About>
+<a href=https://missalexia.com/resume/ title=About>
 <span>About</span>
 </a>
 </li>
 <li>
-<a href=http://missalexia.com/contact/ title=Contact>
+<a href=https://missalexia.com/contact/ title=Contact>
 <span>Contact</span>
 </a>
 </li>
@@ -68,7 +68,7 @@
 <main class=main>
 <article class=post-single>
 <header class=post-header>
-<div class=breadcrumbs><a href=http://missalexia.com>Home</a>&nbsp;»&nbsp;<a href=http://missalexia.com/stories/>Stories</a></div>
+<div class=breadcrumbs><a href=https://missalexia.com>Home</a>&nbsp;»&nbsp;<a href=https://missalexia.com/stories/>Stories</a></div>
 <h1 class=post-title>
 Social Network Analysis 3
 </h1>
@@ -112,17 +112,17 @@ Social Network Analysis 3
 </div>
 <footer class=post-footer>
 <ul class=post-tags>
-<li><a href=http://missalexia.com/tags/social-network-analysis/>social network analysis</a></li>
-<li><a href=http://missalexia.com/tags/data-analysis/>data analysis</a></li>
-<li><a href=http://missalexia.com/tags/python/>python</a></li>
+<li><a href=https://missalexia.com/tags/social-network-analysis/>social network analysis</a></li>
+<li><a href=https://missalexia.com/tags/data-analysis/>data analysis</a></li>
+<li><a href=https://missalexia.com/tags/python/>python</a></li>
 </ul>
 <nav class=paginav>
-<a class=prev href=http://missalexia.com/stories/process-diagram-service-request/>
+<a class=prev href=https://missalexia.com/stories/process-diagram-service-request/>
 <span class=title>« Prev Page</span>
 <br>
 <span>Process Diagram: Service Request</span>
 </a>
-<a class=next href=http://missalexia.com/stories/network-analysis-2/>
+<a class=next href=https://missalexia.com/stories/network-analysis-2/>
 <span class=title>Next Page »</span>
 <br>
 <span>Social Network Analysis 2</span>

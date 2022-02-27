@@ -2,107 +2,107 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>hello on Alexia</title>
-    <link>http://missalexia.com/categories/hello/</link>
+    <link>https://missalexia.com/categories/hello/</link>
     <description>Recent content in hello on Alexia</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://missalexia.com/categories/hello/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 08 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://missalexia.com/categories/hello/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A Simple Text Analysis Tool</title>
-      <link>http://missalexia.com/stories/natural-language-processing-app/</link>
+      <link>https://missalexia.com/stories/natural-language-processing-app/</link>
       <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://missalexia.com/stories/natural-language-processing-app/</guid>
+      <guid>https://missalexia.com/stories/natural-language-processing-app/</guid>
       <description>NLP &amp;amp; Streamlit</description>
     </item>
     
     <item>
       <title>Print Numbers with Python</title>
-      <link>http://missalexia.com/stories/print_number_with_python/</link>
+      <link>https://missalexia.com/stories/print_number_with_python/</link>
       <pubDate>Wed, 22 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://missalexia.com/stories/print_number_with_python/</guid>
+      <guid>https://missalexia.com/stories/print_number_with_python/</guid>
       <description>A python clock. Have fun.</description>
     </item>
     
     <item>
       <title>Microservices Model</title>
-      <link>http://missalexia.com/stories/microservices/</link>
+      <link>https://missalexia.com/stories/microservices/</link>
       <pubDate>Thu, 25 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://missalexia.com/stories/microservices/</guid>
+      <guid>https://missalexia.com/stories/microservices/</guid>
       <description>Something technical</description>
     </item>
     
     <item>
       <title>Process Diagram: Service Request</title>
-      <link>http://missalexia.com/stories/process-diagram-service-request/</link>
+      <link>https://missalexia.com/stories/process-diagram-service-request/</link>
       <pubDate>Thu, 12 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://missalexia.com/stories/process-diagram-service-request/</guid>
+      <guid>https://missalexia.com/stories/process-diagram-service-request/</guid>
       <description>Simple business process for self-serving services</description>
     </item>
     
     <item>
       <title>Social Network Analysis 3</title>
-      <link>http://missalexia.com/stories/network-analysis-3/</link>
+      <link>https://missalexia.com/stories/network-analysis-3/</link>
       <pubDate>Sat, 09 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://missalexia.com/stories/network-analysis-3/</guid>
+      <guid>https://missalexia.com/stories/network-analysis-3/</guid>
       <description>Part 3</description>
     </item>
     
     <item>
       <title>Social Network Analysis 2</title>
-      <link>http://missalexia.com/stories/network-analysis-2/</link>
+      <link>https://missalexia.com/stories/network-analysis-2/</link>
       <pubDate>Thu, 24 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://missalexia.com/stories/network-analysis-2/</guid>
+      <guid>https://missalexia.com/stories/network-analysis-2/</guid>
       <description>Part 2</description>
     </item>
     
     <item>
       <title>Social Network Analysis</title>
-      <link>http://missalexia.com/stories/network-analysis-1/</link>
+      <link>https://missalexia.com/stories/network-analysis-1/</link>
       <pubDate>Mon, 14 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://missalexia.com/stories/network-analysis-1/</guid>
+      <guid>https://missalexia.com/stories/network-analysis-1/</guid>
       <description>Part 1</description>
     </item>
     
     <item>
       <title>A Mixed-integer Programming Problem</title>
-      <link>http://missalexia.com/stories/mixed-integer-programming/</link>
+      <link>https://missalexia.com/stories/mixed-integer-programming/</link>
       <pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://missalexia.com/stories/mixed-integer-programming/</guid>
+      <guid>https://missalexia.com/stories/mixed-integer-programming/</guid>
       <description>Something mathematical</description>
     </item>
     
     <item>
       <title>A Blending Problem with XPRESS</title>
-      <link>http://missalexia.com/stories/blending-problem/</link>
+      <link>https://missalexia.com/stories/blending-problem/</link>
       <pubDate>Sun, 29 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://missalexia.com/stories/blending-problem/</guid>
+      <guid>https://missalexia.com/stories/blending-problem/</guid>
       <description>Something mathematical</description>
     </item>
     
     <item>
       <title>An Optimization Model Case in AMPL</title>
-      <link>http://missalexia.com/stories/optimization-model/</link>
+      <link>https://missalexia.com/stories/optimization-model/</link>
       <pubDate>Tue, 10 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://missalexia.com/stories/optimization-model/</guid>
+      <guid>https://missalexia.com/stories/optimization-model/</guid>
       <description>Something mathematical</description>
     </item>
     
     <item>
       <title>H-index &amp; G-index</title>
-      <link>http://missalexia.com/stories/h-index-g-index/</link>
+      <link>https://missalexia.com/stories/h-index-g-index/</link>
       <pubDate>Sat, 24 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://missalexia.com/stories/h-index-g-index/</guid>
+      <guid>https://missalexia.com/stories/h-index-g-index/</guid>
       <description>Explained with code</description>
     </item>
     
