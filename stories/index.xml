@@ -106,14 +106,5 @@
       <description>Explained with code</description>
     </item>
     
-    <item>
-      <title>About</title>
-      <link>https://missalexia.com/stories/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://missalexia.com/stories/about/</guid>
-      <description>Pactum serva.</description>
-    </item>
-    
   </channel>
 </rss>
